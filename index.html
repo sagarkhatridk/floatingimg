@@ -11,20 +11,14 @@
     <link rel="icon" href="2.jpeg">
     <style>
         
-        @media screen and (orientation: portrait) {
-  #toolbar {
-    width: 100%;
-  }
+       #info {display: none;}
+
+/* only when orientation is in portrait mode */
+@media all and (orientation:portrait) {
+    #info {
+         display: block;
+    }
 }
-
-/* For landscape, we want the toolbar stick on the left */
-
-@media screen and (orientation: landscape) {
-  #toolbar {
-    position: fixed;
-    width: 2.65em;
-    height: 100%;
-  }
         body {
   overflow: hidden; /* Hide scrollbars */
         }
