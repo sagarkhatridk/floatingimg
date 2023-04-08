@@ -11,17 +11,22 @@
     <link rel="icon" href="2.jpeg">
     <style>
         
-     
+  body {
+    display: none;
+}
 
-/* only when orientation is in portrait mode */
-@media all and (orientation:portrait) {
-    #info {
-         display: block;
+@media screen and (max-width: 300px) {
+    body {
+        background-color: rgba(0,0,0,0.5);
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        overflow: hidden; 
     }
 }
-        body {
-  overflow: hidden; /* Hide scrollbars */
-        }
+  
         * {
             margin: 0px;
             padding: 0px;
